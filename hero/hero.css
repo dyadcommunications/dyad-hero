@@ -1,0 +1,99 @@
+/* ===== HERO BLOCK STYLES ====== */
+.dyad-hero,
+.dyad-hero img {
+	height: 100vh;
+	height: 100svh;
+	height: 100dvh;
+}
+.dyad-hero .project-title-container,
+.dyad-hero .dyad-hero-innerblock {
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	left: auto;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 4rem;
+	z-index: 10;
+}
+.dyad-hero:has(.dyad-hero-innerblock p)::after {
+	content: "";
+	height: auto;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--dark-cream);
+	z-index: 1;
+	opacity: 0.5;
+}
+.dyad-hero .dyad-hero-innerblock {
+	top: 50%;
+	left: 50%;
+	bottom: auto;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.reveal-sub-nav .dyad-hero .dyad-hero-innerblock {
+	padding-top: var(--header-height-with-subnav);
+}
+.dyad-hero .dyad-hero-innerblock p {
+	font-size: 1.6rem;
+	font-size: 2rem;
+	line-height: 1.8;
+	max-width: 64%;
+	max-width: 56.5%;
+	margin: 0 auto;
+	text-transform: none;
+}
+
+.dyad-hero .project-title-container h2 {
+	font-size: 1.75rem;
+	letter-spacing: 0.25rem;
+}
+.dyad-hero .project-title-container h3 {
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+}
+
+.dyad-hero button.scroll-indicator {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0.9rem;
+	z-index: 10;
+}
+.dyad-hero button.scroll-indicator.arrow-indicator svg {
+	transform: rotate(270deg);
+	fill: #fff;
+	opacity: 0.75;
+}
+.dyad-hero button:hover {
+	cursor: pointer;
+}
+/* ===== ACF BLOCK STYLES ====== */
+.wp-admin .dyad-hero,
+.wp-admin .dyad-hero img {
+	height: 30rem;
+}
+.wp-admin .dyad-hero img {
+	width: 100%;
+	object-fit: cover;
+}
+.wp-admin .dyad-hero .dyad-hero-innerblock p {
+	font-size: 1.25rem;
+	line-height: 1.65;
+}
+
+.dyad-hero .project-title-container h2,
+.dyad-hero .project-title-container h3 {
+	font-weight: 300;
+	margin: 0;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

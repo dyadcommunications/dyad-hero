@@ -1,0 +1,14 @@
+{
+	"name": "acf/hero",
+	"title": "Dyad Hero",
+	"description": "A custom Dyad Hero block.",
+	"style": ["file:./hero.css"],
+	"editorScript": "file:./hero.js",
+	"category": "formatting",
+	"icon": "camera",
+	"keywords": ["image", "hero", "dyad", "landing"],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "hero.php"
+	}
+}
