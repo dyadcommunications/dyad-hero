@@ -3,9 +3,7 @@
 .dyad-hero img {
 	height: 100vh;
 	height: 100svh;
-	height: 100dvh;
 }
-.dyad-hero .project-title-container,
 .dyad-hero .dyad-hero-innerblock {
 	position: absolute;
 	top: auto;
@@ -27,9 +25,9 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: var(--dark-cream);
+	background: #000;
 	z-index: 1;
-	opacity: 0.5;
+	opacity: 0.25;
 }
 .dyad-hero .dyad-hero-innerblock {
 	top: 50%;
@@ -37,27 +35,16 @@
 	bottom: auto;
 	transform: translate(-50%, -50%);
 	text-align: center;
-}
-.reveal-sub-nav .dyad-hero .dyad-hero-innerblock {
-	padding-top: var(--header-height-with-subnav);
-}
-.dyad-hero .dyad-hero-innerblock p {
-	font-size: 1.6rem;
-	font-size: 2rem;
-	line-height: 1.8;
-	max-width: 64%;
-	max-width: 56.5%;
-	margin: 0 auto;
-	text-transform: none;
+	padding: 0 1rem;
 }
 
-.dyad-hero .project-title-container h2 {
-	font-size: 1.75rem;
-	letter-spacing: 0.25rem;
-}
-.dyad-hero .project-title-container h3 {
-	font-size: 1rem;
-	letter-spacing: 0.1rem;
+.dyad-hero .dyad-hero-innerblock p {
+	font-size: 1.4rem;
+	font-size: clamp(1.2rem, 3vw, 2rem);
+	line-height: 1.8;
+	max-width: 69rem;
+	margin: 0 auto;
+	text-transform: none;
 }
 
 .dyad-hero button.scroll-indicator {
@@ -65,7 +52,7 @@
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 0.9rem;
+	width: 2.8rem;
 	z-index: 10;
 }
 .dyad-hero button.scroll-indicator.arrow-indicator svg {
